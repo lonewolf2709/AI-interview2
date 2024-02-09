@@ -11,7 +11,7 @@ const port =3080;
 app.get('/', function (req,res){
     res.send("Hello WOrld");
 });
-app.post("/", async (req,res)=>{
+app.post("/inter/1", async (req,res)=>{
   console.log("hello2");
   const { message }=req.body;
   console.log(message);
