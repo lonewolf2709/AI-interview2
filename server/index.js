@@ -3,7 +3,7 @@ import OpenAI from "openai";
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-const openai = new OpenAI({apiKey:"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"});
+const openai = new OpenAI({apiKey:"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"});
 const app=express();
 app.use(bodyParser.json());
 app.use(cors());
