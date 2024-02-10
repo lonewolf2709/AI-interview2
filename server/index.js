@@ -3,7 +3,7 @@ import OpenAI from "openai";
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-const openai = new OpenAI({apiKey:"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"});
+const openai = new OpenAI({apiKey:"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"});
 const app=express();
 app.use(bodyParser.json());
 app.use(cors());
@@ -11,7 +11,7 @@ const port =3080;
 app.get('/', function (req,res){
     res.send("Hello WOrld");
 });
-app.post("/inter/1", async (req,res)=>{
+app.post("/", async (req,res)=>{
   console.log("hello2");
   const { message }=req.body;
   console.log(message);

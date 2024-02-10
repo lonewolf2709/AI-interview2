@@ -44,14 +44,15 @@ function Interface()
         { user: "me", message: "If the user provides both a response and the next question in the same input, prioritize handling the user's response first. Then, in a separate message, introduce the next question to maintain a clear conversation flow." },
         { user: "me", message: "Avoid revealing the answer and the next question in the same response. Proceed to the next question only after the user confirms understanding or expresses satisfaction." },
         { user: "me", message: "To maintain focus, provide only the current question and its answer. Do not display future questions and answers until the user has responded to the current one." },
-        { user: "me", message: "If the user requests information on upcoming questions, politely inform them that you'll reveal each question in sequence and address them one at a time." }
+        { user: "me", message: "If the user requests information on upcoming questions, politely inform them that you'll reveal each question in sequence and address them one at a time." },
+        {user :"me", message:"Never assume that the response of the prevvios question would be the response for this question also. Also wait for the user to respond before moving on."}
       ];
     const [chatLog,setChatLog]=useState([]);
     const Intro= async ()=>
     {
         setload(true);
         const chatLogFinal=intructions;
-        const response=await fetch("https://backend-2u5l.onrender.com",{
+        const response=await fetch("http://localhost:3080",{
             method:"POST",
             headers: {
                 "Content-Type":"application/json"
@@ -76,7 +77,7 @@ function Interface()
         setInput("");
         setChatLog(chatlogNew);
         const chatLogFinal=intructions.concat(chatlogNew);
-        const response=await fetch("https://backend-2u5l.onrender.com",{
+        const response=await fetch("http://localhost:3080",{
             method:"POST",
             headers: {
                 "Content-Type":"application/json"
@@ -97,7 +98,7 @@ function Interface()
         setload(true);
         const del=[{user:"me",message:"The User would like to stop the interview here. Give a 3-4 line feedback and suggest areas for improvement to the user. Tell the user it was great taking his interview and he may leave now.Give a blunt feedback with no sugar coating"}];
         const finalInstuctions=chatLog.concat(del);
-        const response=await fetch("https://backend-2u5l.onrender.com",{
+        const response=await fetch("http://localhost:3080",{
             method:"POST",
             headers: {
                 "Content-Type":"application/json"
