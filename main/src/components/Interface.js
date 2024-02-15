@@ -116,8 +116,9 @@ function Interface()
     function handleChange(event){
         setInput(event.target.value);
     }
+    let a=window.innerWidth;
     return <div className="App2">
-        <aside className="sidemenu">
+        {a>768&&<aside className="sidemenu">
             <Link className="link" to="/home"><div className="side-menu-button">
             <HomeIcon />
                 Home
@@ -133,7 +134,7 @@ function Interface()
                
             </textarea>
             </div>
-        </aside>
+        </aside>}
         <section className="chat-box">
         <div className="chat-log">
         {chatLog.map((message1,index) => (

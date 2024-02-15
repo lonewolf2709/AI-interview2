@@ -2,7 +2,6 @@
     height:100vh;
     display: flex;
     flex-direction: row;
-
 }
 .left{
     color:rgb(0, 136, 255);
@@ -39,6 +38,10 @@
     height: 100%;
     width:40%;
     background-color: black;
+    @media(max-width:768px)
+    {
+        width:100%;
+    }
 }
 .butt1{
     font-size:1.2rem;

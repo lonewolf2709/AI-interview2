@@ -13,6 +13,11 @@
     font-weight: 700;
     color: #012970;
         margin: 0;
+        @media(max-width:768px)
+        {
+            font-size:28px;
+            text-align: center;
+        }
     }
     h4{
         font-size: 13px;
@@ -33,6 +38,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px;
     padding:20px;
+    @media(max-width:768px)
+    {
+        grid-template-columns: 1fr;
+        width:75%;
+    }
 }
 .card{
     display: flex;

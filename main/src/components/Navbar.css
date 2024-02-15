@@ -7,6 +7,11 @@
     position: fixed;
     width:100%;
     z-index: 5;
+    @media(max-width:768px)
+    {
+        background-color: black;
+        height:8vh;
+    }
 }
 .nav-outer2{
     background:linear-gradient(to right,rgb(14, 1, 40) 46%,black 100%);
@@ -17,6 +22,11 @@
     position: fixed;
     width: 100%;
     z-index: 5;
+    @media(max-width:768px)
+    {
+        background-color: black;
+        height:8vh;
+    }
 }
 .leftnav{
     color:gold;
@@ -25,6 +35,10 @@
     gap:10px;
     align-items: center;
     justify-content: center;
+    @media(max-width:768px)
+    {
+        font-size:0.8rem;
+    }
 }
 .rightnav{
     color:rgb(178, 178, 241);

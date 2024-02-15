@@ -8,6 +8,11 @@
     align-items: center;
     justify-content: center;
     padding-left:50px;
+    @media(max-width:768px)
+    {
+        padding-left: 0px;
+        text-align: center;
+    }
 }
 .content{
     margin-left:20px;
@@ -20,12 +25,20 @@
         letter-spacing: 1px;
         color: #012970;
         margin-top: 3px;
+        @media(max-width:768px)
+        {
+            font-size:25px;
+        }
     }
 .contentp{
         font-size: 15px;
         line-height: 24px;
         margin-bottom: 0;
         color:blue;
+        @media(max-width:768px)
+        {
+            font-size:12px;
+        }
     }
 .footer-img{
     width:50%;
@@ -40,4 +53,10 @@
     justify-content: center;
     color: #012970;
     font-size: 14px;
+    @media(max-width:768px)
+    {
+        padding-top: 10px;
+        padding-bottom:10px;
+        font-size:10px;
+    }
 }

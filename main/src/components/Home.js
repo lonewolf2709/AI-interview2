@@ -7,12 +7,13 @@ function Home()
         <h4>TOPICS</h4>
         <h2>Currently Present On AInterview</h2>
         <div className="outer-cards">
-            <Link className="t-link" to="/inter/1">
+            <div><Link className="t-link" to="/inter/1">
             <div className="cardH">
                 <img className="h-image" src="https://i.ytimg.com/vi/rLhIPkneFM0/hqdefault.jpg"></img>
                 <p>Operating Systems</p>
             </div>
             </Link>
+            </div>
             <Link className="t-link" to="/inter/2">
             <div className="cardH">
                 <img className="h-image" src="https://t3.ftcdn.net/jpg/03/87/94/94/360_F_387949414_jvPBNVHETFghaUYLareyh5Nk8HX3bbFB.jpg"></img>

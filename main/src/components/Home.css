@@ -13,6 +13,11 @@
     font-weight: 700;
     color: #012970;
         margin: 0;
+        @media(max-width:768px)
+        {
+            font-size:26px;
+            text-align: center;
+        }
     }
     h4{
         font-size: 13px;
@@ -26,9 +31,14 @@
 .outer-cards{
     width:95%;
     display:grid;
-    gap:20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
     padding: 20px;
+    @media(max-width:768px)
+    {
+        grid-template-columns: 1fr;
+        width:80%;
+    }
 }
 .cardH{
     background-color: aliceblue;
@@ -45,6 +55,10 @@
     font-size:1.1rem;
     font-weight:700;
    }
+   @media(max-width:768px)
+        {
+            width:100%;
+        }
 }
 .cardH:hover{
    transform: scale(0.97);

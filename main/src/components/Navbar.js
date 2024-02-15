@@ -41,16 +41,19 @@ function Navbar(){
             )
         )
     }
+    var x=window.innerWidth;
     return <div className={!userName?"nav-outer2":"nav-outer1"}>
     <div className="leftnav"><SmartToyIcon fontSize="large"/><h1>AInterview</h1></div>
     {
-            !userName?<div></div>:<>
+            (!userName)?<div></div>:<>
+            {x>768&&
         <div className="rightnav">
         <Link activeClass="active" to="top" spy={true} smooth={true} duration={500}><h3>Home</h3></Link>
         <Link activeClass="active" to="feat" spy={true} smooth={true} offset={-100} duration={500}><h3>Features</h3></Link>
             <Link activeClass="active" to="topics" spy={true} offset={-100} smooth={true} duration={500}><h3>Topics</h3></Link>
             <button onClick={signOutWithGoogle} className="butt">Log Out</button>
         </div>
+            }
         </>
         }
     </div>

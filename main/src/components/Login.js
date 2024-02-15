@@ -87,13 +87,16 @@ function Login()
           )
       )
   }
+  var x=window.innerWidth;
     return <div className="outer">
+    {x>768&&
         <div className="left">
         <div className="content">
             <h1>AI-Powered Mock Interviews On</h1>
             <h1>{text}</h1>
         </div>
         </div>
+    }
         <div className="right">
         <h1>Get Started</h1>
         <button className="butt1" onClick={signInWithGoogle}>Log In</button>

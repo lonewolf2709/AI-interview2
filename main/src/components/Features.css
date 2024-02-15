@@ -13,6 +13,11 @@
     font-weight: 700;
     color: #012970;
         margin: 0;
+        @media(max-width:768px)
+        {
+            font-size: 26px;
+            text-align: center;
+        }
     }
     h4{
         font-size: 13px;
@@ -26,6 +31,10 @@
 .outerFeature{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media(max-width:768px)
+    {
+        grid-template-columns: 1fr;
+    }
     align-items: center;
     gap:35px;
     padding: 20px;
@@ -52,6 +61,10 @@
     font-size: 1.3rem;
     color: #012970;
     font-weight: 700 !important;
+    @media(max-width:768px)
+        {
+            font-size: 1.2rem;
+        }
 }
 .icon-outer{
     display: flex;
