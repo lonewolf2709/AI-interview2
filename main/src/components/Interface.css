@@ -33,11 +33,6 @@
     flex:1;
     background-color: #343541;
     position:relative;
-    @media(max-width:768px)
-    {
-        height:100%;
-    width: 100%;
-    }
 }
 .chat-input-holder{
   padding:24px;
