@@ -67,11 +67,6 @@
    max-height:90vh;
    text-align: left;
    overflow-y: auto;
-   @media(max-width:768px)
-   {
-    height:100%;
-    width: 100%;
-   }
 }
 .chat-message-center{
     display: flex;
